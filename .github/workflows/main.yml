@@ -1,0 +1,13 @@
+name: My First Automatic Workflow
+
+on: [push]
+
+jobs:
+  run-devops-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Say Hello
+        run: echo "Hello Saad! Welcome to GitHub Actions."
+
+      - name: Step 2 - Check Date
+        run: date
